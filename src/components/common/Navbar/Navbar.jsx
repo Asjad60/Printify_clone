@@ -37,7 +37,7 @@ const Navbar = () => {
             } lg:static  max-[1023px]:w-full transition-all duration-500`}
           >
             <ul
-              className="flex h-screen lg:h-auto bg-white max-[1023px]:max-w-[250px] gap-4 xl:gap-6 flex-col lg:flex-row text-[#353A47]"
+              className="flex min-h-screen lg:h-auto bg-white max-[1023px]:max-w-[250px] gap-4 xl:gap-6 flex-col lg:flex-row text-[#353A47]"
               ref={ref}
             >
               <li className="flex lg:hidden justify-end gap-12 border-b py-4 mb-4">
