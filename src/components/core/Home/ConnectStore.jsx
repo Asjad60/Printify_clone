@@ -50,12 +50,14 @@ const ConnectStore = () => {
           animate={isInView ? { backgroundSize: "90%" } : {}}
           transition={{ duration: 1 }}
         >
-          <div
-            className="z-10 translate-x-6 -translate-y-3 w-[100px] sm:w-[120px] h-[100px] sm:h-[120px] lg:w-[150px] lg:h-[150px] rounded-3xl shadow-md"
-            style={{
-              background: `url(${printify}) center/50% no-repeat, #18c75a`,
-            }}
-          />
+          <div className="bg-[#18c75a] w-[100px] sm:w-[120px] h-[100px] sm:h-[120px] lg:w-[150px] lg:h-[150px] rounded-3xl shadow-md">
+            <div
+              className="z-10 h-full"
+              style={{
+                background: `url(${printify}) center/50% no-repeat`,
+              }}
+            />
+          </div>
           {connectImages.map(({ src, alt, position, className }) => (
             <motion.img
               key={alt}
