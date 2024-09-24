@@ -42,9 +42,10 @@ const ConnectStore = () => {
           ref={connectStoreRef}
           className="w-full bg-cover bg-center bg-no-repeat h-[450px] relative mt-10 flex justify-center items-center overflow-hidden"
           style={{
-            background: isLargeScreen
-              ? `url(${storesImg}) center/90% no-repeat`
-              : "",
+            backgroundImage: isLargeScreen ? `url(${storesImg})` : "",
+            backgroundPosition: "center",
+            backgroundSize: "90%",
+            backgroundRepeat: "no-repeat",
           }}
           initial={{ backgroundSize: "0%" }}
           animate={isInView ? { backgroundSize: "90%" } : {}}
@@ -54,7 +55,10 @@ const ConnectStore = () => {
             <div
               className="z-10 h-full"
               style={{
-                background: `url(${printify}) center/50% no-repeat`,
+                backgroundImage: `url(${printify})`,
+                backgroundPosition: "center",
+                backgroundSize: "50%",
+                backgroundRepeat: "no-repeat",
               }}
             />
           </div>

@@ -24,17 +24,17 @@ const Financial = () => {
           <p>You pay for fulfillment only when you make a sale</p>
 
           <div className="p-8 flex flex-col rounded-xl px-4 bg-[#132127] lg:max-w-[380px]">
-            <div className="p-4">
+            <div className="p-4 flex justify-between">
               <span>You sell a t-shirt</span>
               <span>$30</span>
             </div>
 
-            <div className="p-4 border-b border-slate-400">
+            <div className="p-4 flex justify-between border-b border-slate-400">
               <span>You pay for its production</span>
               <span>$12</span>
             </div>
 
-            <div className="p-4 text-green-600 font-semibold text-xl">
+            <div className="p-4 flex justify-between text-green-600 font-semibold text-xl">
               <span>Your profit</span>
               <span>$18</span>
             </div>
