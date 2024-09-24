@@ -4,7 +4,7 @@ import { IoCheckmark } from "react-icons/io5";
 import { MdOutlinePlayCircle } from "react-icons/md";
 import Button from "../../common/Button";
 import { Link } from "react-router-dom";
-import PrintDesign from "../../../assets/svgs/printing-design.svg";
+import PrintDesign from "../../../assets/images/printing-design.png";
 
 const HeroSection = () => {
   return (
@@ -54,7 +54,11 @@ const HeroSection = () => {
         </div>
 
         <div className="w-full flex justify-center flex-1 ">
-          <img src={PrintDesign} alt="PrintDesignImg" />
+          <img
+            src={PrintDesign}
+            alt="PrintDesignImg"
+            className=" mix-blend-darken"
+          />
         </div>
       </div>
     </div>
