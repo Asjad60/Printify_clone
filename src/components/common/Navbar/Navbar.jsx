@@ -14,11 +14,11 @@ const Navbar = () => {
   return (
     <header className="shadow-md sticky top-0 z-50">
       <nav className="bg-white relative">
-        <div className="flex h-[4.3rem] max-w-7xl mx-auto px-6 xl:px-8 items-center justify-between w-full ">
+        <div className="flex h-[4.3rem] max-w-7xl mx-auto p-2 min-[400px]:px-6 xl:px-8 items-center justify-between w-full ">
           <div className="flex gap-2">
             <Button
               onClick={() => setIsVisible((prev) => !prev)}
-              customClass={"px-1 py-0 border-none bg-transparent lg:hidden"}
+              customClass={" py-0 border-none bg-transparent lg:hidden"}
               outline={true}
             >
               <RiSideBarFill size={25} className="text-[#39B75D]" />
@@ -37,7 +37,7 @@ const Navbar = () => {
             } lg:static  max-[1023px]:w-full transition-all duration-500`}
           >
             <ul
-              className="flex min-h-screen lg:h-auto bg-white max-[1023px]:max-w-[250px] gap-4 xl:gap-6 flex-col lg:flex-row text-[#353A47]"
+              className="flex h-screen lg:h-auto bg-white max-[1023px]:max-w-[250px] gap-4 xl:gap-6 flex-col lg:flex-row text-[#353A47]"
               ref={ref}
             >
               <li className="flex lg:hidden justify-end gap-12 border-b py-4 mb-4">

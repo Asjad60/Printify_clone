@@ -5,7 +5,7 @@ import Footer from "./components/common/Footer";
 
 function App() {
   return (
-    <div className="min-h-screen w-full grid font-poppins">
+    <div className="min-h-screen w-full flex flex-col font-poppins">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

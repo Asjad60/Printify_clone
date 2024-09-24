@@ -18,6 +18,7 @@ const Slider = ({ contanerRef, isRview, data }) => {
     <div className="w-full mt-32">
       <Swiper
         slidesPerView={1}
+        centeredSlides={true}
         pagination={{
           el: paginationRef.current,
           clickable: true,
@@ -30,12 +31,13 @@ const Slider = ({ contanerRef, isRview, data }) => {
         modules={[Autoplay, Pagination, Navigation]}
         breakpoints={{
           1024: {
+            centeredSlides: false,
             pagination: false,
             slidesPerView: 3,
             spaceBetween: 50,
           },
         }}
-        className="mySwiper max-[1023px]:px-10"
+        className="mySwiper "
       >
         {data.map((item, index) => (
           <SwiperSlide key={index}>
@@ -46,6 +48,7 @@ const Slider = ({ contanerRef, isRview, data }) => {
                 duration: 1,
                 delay: index * 0.3,
               }}
+              className="flex justify-center items-center"
             >
               {!isRview ? (
                 <Card

@@ -12,13 +12,13 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-2 px-4 md:grid-cols-4 gap-8 mb-10">
         {footerData.map((section, index) => (
           <div key={index}>
-            <h4 className="text-sm font-semibold mb-4">{section.title}</h4>
-            <ul className="space-y-2">
+            <h4 className=" font-semibold mb-4">{section.title}</h4>
+            <ul className="space-y-2 text-sm">
               {section.links.map((link, idx) => (
                 <li key={idx}>
                   <Link
                     to="#"
-                    className="text-gray-700 hover:text-green-600 hover:text-gray-900 transition duration-200"
+                    className="text-gray-700 hover:text-green-600  transition duration-200"
                   >
                     {link}
                   </Link>

@@ -8,7 +8,7 @@ import PrintDesign from "../../../assets/svgs/printing-design.svg";
 
 const HeroSection = () => {
   return (
-    <div className="h-[calc(100vh-70px)] flex items-center">
+    <div className="lg:py-28 flex items-center">
       <div
         className="max-w-7xl w-full mx-auto  p-8 flex flex-col md:flex-row justify-between items-center mt-20 lg:mt-0"
         style={{ background: `url(${backHero}) right/60% no-repeat` }}
@@ -32,14 +32,17 @@ const HeroSection = () => {
             </span>
           </div>
 
-          <div className="flex gap-4">
+          <div className="flex flex-col min-[400px]:flex-row gap-4">
             <Link to={"/register"}>
               <Button
                 text={"Start for free"}
                 customClass={"px-6 py-4 whitespace-nowrap"}
               />
             </Link>
-            <Button outline={true} customClass={"whitespace-nowrap"}>
+            <Button
+              outline={true}
+              customClass={"whitespace-nowrap max-w-max max-[399px]:p-4"}
+            >
               <MdOutlinePlayCircle size={20} />
               How it Works?
             </Button>

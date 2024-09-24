@@ -23,7 +23,7 @@ const ConnectStore = () => {
   }, []);
 
   return (
-    <div className="min-h-svh w-full relative">
+    <div className=" w-full relative">
       <div
         className="bg-[#f7f7f7] absolute top-0 left-1/2 w-64 h-28 -translate-x-1/2"
         style={{ clipPath: "polygon(50% 58%, 0 0, 100% 0)" }}

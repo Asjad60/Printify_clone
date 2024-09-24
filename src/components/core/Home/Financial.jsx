@@ -7,13 +7,13 @@ const Financial = () => {
   const containerRef = useRef();
   const isInView = useInView(containerRef, { once: true });
   return (
-    <div className="relative min-h-svh overflow-hidden " ref={containerRef}>
+    <div className="relative overflow-hidden pb-20" ref={containerRef}>
       <div
         className="bg-[#f7f7f7] absolute top-0 left-1/2 w-64 h-28 -translate-x-1/2"
         style={{ clipPath: "polygon(50% 58%, 0 0, 100% 0)" }}
       />
 
-      <div className="relative px-20 max-w-7xl mx-auto w-full">
+      <div className="relative px-4 md:px-20 max-w-7xl mx-auto w-full">
         <motion.div
           initial={{ x: 400 }}
           animate={isInView ? { x: 0 } : {}}

@@ -13,7 +13,7 @@ const HowItWorks = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div className="bg-[#f7f7f7] relative min-h-screen pb-20">
+    <div className="bg-[#f7f7f7] relative pb-20">
       <div
         className="bg-white absolute top-0 left-1/2 w-64 h-28 -translate-x-1/2"
         style={{ clipPath: "polygon(50% 58%, 0 0, 100% 0)" }}
@@ -73,7 +73,7 @@ const HowItWorks = () => {
                 </Link>
               </div>
               <div
-                className="absolute bottom-0 -right-2 w-2/3 h-[100px]"
+                className="absolute -bottom-2.5 min-[480]:bottom-0 -right-2 w-2/3 h-[100px]"
                 style={{
                   background: `url(${clothesBottom}) right/100% no-repeat`,
                 }}
